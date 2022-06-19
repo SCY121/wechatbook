@@ -1,0 +1,17 @@
+/* pages/record/record.wxss */
+.l-button{
+  border-radius: 40rpx;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+white-space: nowrap;
+font-size: 28rpx;
+position: relative;
+color: #fff;
+padding: 0 12rpx;
+box-sizing: border-box;
+min-width: 76px;
+height: 23px;
+line-height: 23px;
+background-color: #337559;
+}

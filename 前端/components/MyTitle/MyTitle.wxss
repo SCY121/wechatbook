@@ -1,0 +1,52 @@
+/* components/MyTitle/MyTitle.wxss */
+.search{
+ float: left;
+ width: 130rpx;
+ height: 70rpx;
+ margin-left: 10rpx;
+ background-color: rgb(43, 226, 226);
+ font-size: 28rpx;
+ color: #fff;
+ border: none;
+}
+
+.input{
+ float: left;
+ width: 450rpx;
+ height: 70rpx;
+ font-size: 35rpx;
+ background-color: white;
+}
+.section{
+  float: left;
+  width:100rpx;
+  height: 70rpx;
+  font-size: 25rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: whitesmoke
+}
+.picker{
+  width: 20rpx;
+  display: inline;
+  justify-content: center;
+  /* margin-left: 1rpx; */
+}
+
+.search-view{
+  display: flex;
+ position: relative;
+ overflow: hidden;
+ height: 70rpx;
+ margin-left: 1%;
+ margin-right: 1%;
+ border-radius: 20rpx;
+ padding: 20rpx 40rpx 25rpx 30rpx;
+ background-color: rgba(93, 196, 161, 0.486);
+}
+
+.button-hover {
+ background-color: rgb(0, 81, 255);
+}

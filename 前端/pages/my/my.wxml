@@ -1,0 +1,66 @@
+<!-- pages/profile/index.wxml -->
+
+<view class="{{tabsFixed ? 'header-fixed' : ''}}">
+	<!-- 封面 -->
+	<!-- <image class="poster" src="{{user.poster ? user.poster : 'https://img.yejiefeng.com/poster/default.jpg'}}" mode="aspectFill" bindtap="changePoster" /> -->
+	<image class="poster" src="/image/back1.png" mode="aspectFill" bindtap="changePoster" />
+	<!-- 个人信息 -->
+	<view class="header">
+		<view class="user-box">
+			<view wx:if="{{!user.avatar}}" class="avatar-box">
+				<open-data class="avatar" type="userAvatarUrl"></open-data>
+			</view>
+			<image wx:else class="avatar" src="{{user.avatar}}" bindtap="changeAvatar" mode="aspectFill" />
+			<view wx:if="{{user.gender && user.gender != 0}}" class="gender-box {{user.gender == 1 ? 'male' : 'female'}}">
+				<image class="gender-icon" src="../../images/icon_gender/{{user.gender == 1 ? 'icon_male' : 'icon_female'}}.png" />
+			</view>
+			<view class="btn-box">
+				<l-button shape="semicircle" size="mini" bg-color="#337559" width="180" height="55" bindtap="gotorecord">阅读记录</l-button>
+				<!-- <navigator class="setting" url="/pages/setting/index">
+					<view class="child-circle">
+						<view class="child-core-circle"></view>
+					</view>
+				</navigator> -->
+			</view>
+		</view>
+		<text wx:if="{{user.nick_name}}" class="nick-name">{{tabsFixed ? '' : user.nick_name}}</text>
+		<open-data wx:else class="nick-name" type="userNickName"></open-data>
+		<text class="signature">{{user.signature ? user.signature : '这家伙很懒，什么都没有留下'}}</text>
+	
+	</view>
+</view>
+
+
+<view class="divLine"></view>
+
+
+<view class='title'>
+<text>我的收藏</text>
+</view>
+
+<!--模板信息-->
+<template name="list">
+<navigator url='../detail/detail?id={{id}}'>
+
+<view class='line'></view>
+
+<view class='book-img'>
+<view class='book-image'style="width:40%;height:300rpx">
+<image src='{{bimageurl}}'></image>
+</view>
+
+
+<view class='book-info'style="width:60%;height:300rpx">
+<view class='bookname'><text>书名：{{btitle}}</text></view>
+<view class='author'><text>作者：{{bauthor}}</text></view>
+<view class='booktype'><text>出版日期：{{bpubtime}}</text></view>
+<view class='bookintroduce'><text>豆瓣评分：{{bavescore}}</text></view>
+</view>
+
+</view>
+</navigator>
+</template>
+
+<view class='temp' wx:for="{{array}}">
+<template is="list" data="{{...item}}"/>
+</view>

@@ -1,0 +1,10 @@
+<l-card l-class='card' plaintext='true' wx:for="{{record}}">
+  <view >
+    <!-- <view >序号：{{index+1}}</view> -->
+    <!--item就相当于数组名+下标的结合体，适用于调用数组所有数据-->
+    <view display='flex' text-align='center' justify-content='center' align-items='center'>书目:{{item.name}}</view>
+    <view>页数:{{item.progress}}</view>
+    <view>评星:{{item.starIndex}}</view>
+    <view>记录时间:{{item.time}}</view>
+  </view>
+</l-card>

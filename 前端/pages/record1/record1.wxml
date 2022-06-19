@@ -1,0 +1,29 @@
+<!--pages/homepage/homepage.wxml-->
+<view class="container1">
+  <image class="im1" mode="aspectFit" src="/image/记录.png" ></image>
+  <view class="inputView"> 
+ <label class="loginLab">书目</label> 
+ <input class="inputText" placeholder="<<xxxxx>>" bindinput="nameInput" /> 
+ </view> 
+ <view class="inputView"> 
+ <label class="loginLab">已读至</label> 
+ <input class="inputText" placeholder="xx页" bindinput="progressInput" /> 
+ </view> 
+  <view class="rate">
+    <i-rate bind:change="onChange" value="{{starIndex}}"  size="40"></i-rate>
+  </view>
+  <view class="btn1"> 
+    <l-button bindtap="submit" type="success" shape="semicircle" size="large">
+    <text>保存</text>
+    </l-button>
+  </view>
+
+  <!-- <view class="v1">
+    <i-input value="{{ value1 }}" type="number" right title="消费总额" mode="wrapped" placeholder="询问收银员后输入" />
+    <view>123</view>
+    <view>123</view>
+  </view> -->
+</view>
+
+
+

@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/initial/initial",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/record1/record1",
+    "pages/record/record",
+    "pages/homepage/homepage",
+    "pages/my/my",
+    "pages/leaderboard/leaderboard",
+    "pages/recommender/recommender",
+    "pages/comment/comment",
+    "pages/likelist/likelist"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书库",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "/image/主页0.png",
+        "selectedIconPath": "/image/主页1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/image/记录0.png",
+        "selectedIconPath": "/image/记录1.png",
+        "pagePath": "pages/record1/record1",
+        "text": "记录"
+      },
+      {
+        "iconPath": "/image/探索0.png",
+        "selectedIconPath": "/image/探索1.png",
+        "pagePath": "pages/recommender/recommender",
+        "text": "探索"
+      },
+      {
+        "iconPath": "/image/我的0.png",
+        "selectedIconPath": "/image/我的1.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-tag": "./miniprogram_npm/lin-ui/tag/index",
+    "l-icon": "./miniprogram_npm/lin-ui/icon/index",
+    "l-button": "./miniprogram_npm/lin-ui/button/index",
+    "l-radio": "./miniprogram_npm/lin-ui/radio/index",
+    "l-radio-group": "./miniprogram_npm/lin-ui/radio-group/index",
+    "l-popup": "./miniprogram_npm/lin-ui/popup/index",
+    "l-message": "./miniprogram_npm/lin-ui/message/index",
+    "l-dialog": "./miniprogram_npm/lin-ui/dialog/index",
+    "l-action-sheet": "./miniprogram_npm/lin-ui/action-sheet/index",
+    "l-loadmore": "./miniprogram_npm/lin-ui/loadmore/index",
+    "l-image-picker": "./miniprogram_npm/lin-ui/image-picker/index",
+    "l-status-show": "./miniprogram_npm/lin-ui/status-show/index",
+    "l-tabs": "./miniprogram_npm/lin-ui/tabs/index",
+    "l-tabpanel": "./miniprogram_npm/lin-ui/tabpanel/index",
+    "l-list": "./miniprogram_npm/lin-ui/list/index",
+    "l-input": "./miniprogram_npm/lin-ui/input/index",
+    "l-textarea": "./miniprogram_npm/lin-ui/textarea/index",
+    "l-image-clipper": "./miniprogram_npm/lin-ui/image-clipper/index",
+    "l-image-clipper-tools": "./miniprogram_npm/lin-ui/image-clipper-tools/index",
+    "l-card": "./components/card/index",
+    "nothing": "./components/nothing/index"
+  }
+  
+}

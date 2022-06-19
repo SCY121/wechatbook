@@ -1,0 +1,5 @@
+<!--pages/inital/initial.wxml-->
+<!-- <view class='initialContainer' > -->
+  <image mode="widthFix" src="../../image/4.jpg"></image>
+<!-- <button bindgetuserinfo='handleGetUserInfo' style='display:{{isShow?"block":"none"}}' open-type='getUserInfo'>开启小程序之旅</button> -->
+<!-- </view> -->
